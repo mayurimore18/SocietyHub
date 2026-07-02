@@ -1,0 +1,173 @@
+/* ==========================================
+        WELCOME BANNER
+========================================== */
+
+.welcome-banner{
+
+    width:100%;
+
+    min-height: 76px;
+    height:74px;
+
+    background:linear-gradient(90deg,#2563EB 0%,#3B82F6 55%,#60A5FA 100%);
+
+    border-radius:12px;
+
+    display:grid;
+
+    grid-template-columns:190px 1fr 440px;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.18);
+
+    overflow:hidden;
+
+}
+
+.banner-title{
+
+    font-size:19px;
+
+    font-weight:700;
+}
+
+.banner-description{
+
+    font-size:15px;
+
+    line-height:1.5;
+
+}
+
+/* ==========================================
+        DATE
+========================================== */
+
+.banner-date{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.banner-date svg{
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+        TITLE
+========================================== */
+
+.banner-title{
+
+    text-align:center;
+
+    font-size:17px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+        DESCRIPTION
+========================================== */
+
+.banner-description{
+
+    text-align:right;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    opacity:.95;
+
+}
+
+/* ==========================================
+        RESPONSIVE
+========================================== */
+
+@media(max-width:1200px){
+
+.welcome-banner{
+
+grid-template-columns:170px 1fr 320px;
+
+}
+
+.banner-description{
+
+font-size:13px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.welcome-banner{
+
+grid-template-columns:1fr;
+
+height:auto;
+
+padding:18px;
+
+row-gap:10px;
+
+text-align:center;
+
+}
+
+.banner-date{
+
+justify-content:center;
+
+}
+
+.banner-title{
+
+text-align:center;
+
+}
+
+.banner-description{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.banner-title{
+
+font-size:16px;
+
+}
+
+.banner-description{
+
+font-size:13px;
+
+line-height:1.5;
+
+}
+
+}

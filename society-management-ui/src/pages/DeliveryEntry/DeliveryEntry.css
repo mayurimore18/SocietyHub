@@ -1,0 +1,466 @@
+/* ==================================================
+   Delivery Entry Page
+================================================== */
+
+.delivery-page{
+
+    padding:8px;
+
+}
+
+/* ==================================================
+   Header
+================================================== */
+
+.page-header{
+
+    margin-bottom:28px;
+
+}
+
+.page-header h1{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    margin-bottom:8px;
+
+}
+
+.page-header p{
+
+    font-size:15px;
+
+    color:#64748B;
+
+}
+
+/* ==================================================
+   Main Card
+================================================== */
+
+.delivery-card{
+
+    background:#FFFFFF;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    box-shadow:0 12px 35px rgba(15,23,42,.08);
+
+}
+
+/* ==================================================
+   Form Sections
+================================================== */
+
+.form-section{
+
+    margin-bottom:35px;
+
+}
+
+.form-section h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#0F172A;
+
+    margin-bottom:24px;
+
+}
+
+/* ==================================================
+   Grid
+================================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.full-width{
+
+    grid-column:1/-1;
+
+}
+
+/* ==================================================
+   Form Group
+================================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.form-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ==================================================
+   Inputs
+================================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:2px solid #D1D5DB;
+
+    border-radius:12px;
+
+    background:#FFFFFF;
+
+    font-size:14px;
+
+    color:#0F172A;
+
+    outline:none;
+
+    transition:.3s;
+
+    box-sizing:border-box;
+
+}
+
+.form-group textarea{
+
+    min-height:130px;
+
+    resize:none;
+
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover{
+
+    border-color:#94A3B8;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.08);
+
+}
+
+.form-group input[readonly]{
+
+    background:#F8FAFC;
+
+    color:#475569;
+
+}
+
+/* ==================================================
+   Status Card
+================================================== */
+
+.status-card{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 22px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+}
+
+.status-card span{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ==================================================
+   Status Badge
+================================================== */
+
+.status-badge{
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-transform:capitalize;
+
+}
+
+/* Waiting */
+
+.status-badge.waiting{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+}
+
+/* Pending */
+
+.status-badge.pending{
+
+    background:#DBEAFE;
+
+    color:#1D4ED8;
+
+}
+
+/* Delivered */
+
+.status-badge.delivered{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+}
+
+/* Rejected */
+
+.status-badge.rejected{
+
+    background:#FEE2E2;
+
+    color:#B91C1C;
+
+}
+
+/* ==================================================
+   Buttons
+================================================== */
+
+.action-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+.action-buttons button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.action-buttons button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 24px rgba(15,23,42,.15);
+
+}
+
+/* Notify */
+
+.notify-btn{
+
+    background:#7C3AED;
+
+    color:#FFFFFF;
+
+}
+
+/* Verify */
+
+.verify-btn{
+
+    background:#F59E0B;
+
+    color:#FFFFFF;
+
+}
+
+/* Allow */
+
+.allow-btn{
+
+    background:#10B981;
+
+    color:#FFFFFF;
+
+}
+
+/* Reject */
+
+.reject-btn{
+
+    background:#EF4444;
+
+    color:#FFFFFF;
+
+}
+
+/* Cancel */
+
+.cancel-btn{
+
+    background:#E2E8F0;
+
+    color:#334155;
+
+}
+
+/* ==================================================
+   Responsive
+================================================== */
+
+@media(max-width:1100px){
+
+    .form-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .delivery-card{
+
+        padding:22px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .status-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .action-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .action-buttons button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .page-header h1{
+
+        font-size:25px;
+
+    }
+
+    .page-header p{
+
+        font-size:14px;
+
+    }
+
+}

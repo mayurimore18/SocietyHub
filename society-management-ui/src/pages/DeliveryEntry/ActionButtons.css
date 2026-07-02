@@ -1,0 +1,103 @@
+.action-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+.action-buttons button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.action-buttons button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(15,23,42,.15);
+
+}
+
+.notify-btn{
+
+    background:#7C3AED;
+
+    color:white;
+
+}
+
+.verify-btn{
+
+    background:#F59E0B;
+
+    color:white;
+
+}
+
+.allow-btn{
+
+    background:#10B981;
+
+    color:white;
+
+}
+
+.reject-btn{
+
+    background:#EF4444;
+
+    color:white;
+
+}
+
+.cancel-btn{
+
+    background:#E2E8F0;
+
+    color:#334155;
+
+}
+
+@media(max-width:768px){
+
+    .action-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .action-buttons button{
+
+        width:100%;
+
+    }
+
+}

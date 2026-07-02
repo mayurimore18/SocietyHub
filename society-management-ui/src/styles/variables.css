@@ -1,0 +1,73 @@
+/* =========================================================
+   SOCIETY HUB DESIGN SYSTEM
+========================================================= */
+
+:root{
+
+  /* ===== Primary ===== */
+
+  --primary:#2563EB;
+  --primary-dark:#1D4ED8;
+  --primary-light:#DBEAFE;
+
+  /* ===== Sidebar ===== */
+
+  --sidebar:#0F172A;
+  --sidebar-hover:#172554;
+  --sidebar-active:#2563EB;
+
+  /* ===== Background ===== */
+
+  --background:#F8FAFC;
+  --card:#FFFFFF;
+
+  /* ===== Text ===== */
+
+  --heading:#0F172A;
+  --text:#475569;
+  --light-text:#94A3B8;
+
+  /* ===== Border ===== */
+
+  --border:#E2E8F0;
+
+  /* ===== Status ===== */
+
+  --success:#10B981;
+  --warning:#F59E0B;
+  --danger:#EF4444;
+  --purple:#8B5CF6;
+  --cyan:#06B6D4;
+
+  /* ===== Shadows ===== */
+
+  --shadow-sm:
+      0 2px 8px rgba(15,23,42,.05);
+
+  --shadow-md:
+      0 10px 30px rgba(15,23,42,.08);
+
+  --shadow-lg:
+      0 20px 45px rgba(15,23,42,.12);
+
+  /* ===== Radius ===== */
+
+  --radius-sm:12px;
+
+  --radius-md:18px;
+
+  --radius-lg:24px;
+
+  /* ===== Sidebar ===== */
+
+  --sidebar-width:280px;
+
+  /* ===== Navbar ===== */
+
+  --navbar-height:82px;
+
+  /* ===== Animation ===== */
+
+  --transition:.35s ease;
+
+}

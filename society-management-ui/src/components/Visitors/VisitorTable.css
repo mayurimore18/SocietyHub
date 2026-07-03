@@ -149,3 +149,53 @@ font-size:12px;
 font-weight:600;
 
 }
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:992px){
+
+    .visitor-card{
+
+        overflow-x:auto;
+
+    }
+
+    .visitor-table{
+
+        min-width:700px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .visitor-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .visitor-header button{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .visitor-card{
+
+        padding:18px;
+
+    }
+
+}

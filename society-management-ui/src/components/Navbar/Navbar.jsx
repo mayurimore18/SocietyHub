@@ -1,9 +1,9 @@
 import "./Navbar.css";
 
-import { Search, Bell } from "lucide-react";
+import { Search, Bell, Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ setSidebarOpen }) {
 
   const navigate = useNavigate();
 
@@ -11,24 +11,35 @@ function Navbar() {
 
     <header className="navbar">
 
-      {/* Search */}
+      {/* Left Side */}
 
-      <div className="search-box">
+      <div className="navbar-left">
 
-        <Search size={20} />
+        <button
+          className="menu-btn"
+          onClick={() => setSidebarOpen(true)}
+        >
 
-        <input
-          type="text"
-          placeholder="Search visitors, deliveries..."
-        />
+          <Menu size={24} />
+
+        </button>
+
+        <div className="search-box">
+
+          <Search size={20} />
+
+          <input
+            type="text"
+            placeholder="Search here.."
+          />
+
+        </div>
 
       </div>
 
       {/* Right Side */}
 
       <div className="navbar-right">
-
-        {/* Notification */}
 
         <div
           className="notification"
@@ -37,15 +48,9 @@ function Navbar() {
 
           <Bell size={22} />
 
-          <span className="notification-count">
 
-            3
-
-          </span>
 
         </div>
-
-        {/* Profile */}
 
         <div className="profile">
 

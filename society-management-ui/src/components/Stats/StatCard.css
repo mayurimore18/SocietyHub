@@ -96,3 +96,103 @@
 
   font-size: 28px;
 }
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:992px){
+
+    .stat-card{
+
+        min-height:150px;
+
+        padding:20px;
+
+    }
+
+    .stat-value{
+
+        font-size:34px;
+
+    }
+
+    .stat-icon{
+
+        width:56px;
+
+        height:56px;
+
+        font-size:24px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .stat-card{
+
+        padding:18px;
+
+        min-height:auto;
+
+    }
+
+    .stat-title{
+
+        font-size:14px;
+
+    }
+
+    .stat-value{
+
+        font-size:30px;
+
+    }
+
+    .stat-subtitle{
+
+        font-size:13px;
+
+    }
+
+    .stat-icon{
+
+        width:52px;
+
+        height:52px;
+
+        font-size:22px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .stat-card{
+
+        border-radius:16px;
+
+        padding:16px;
+
+    }
+
+    .stat-value{
+
+        font-size:26px;
+
+    }
+
+    .stat-icon{
+
+        width:46px;
+
+        height:46px;
+
+        font-size:20px;
+
+    }
+
+}

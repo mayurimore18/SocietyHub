@@ -518,3 +518,137 @@ textarea {
   }
 
 }
+
+/* ==================================================
+   RESPONSIVE - Visitor Entry
+================================================== */
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .form-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .visitor-entry-page{
+
+        padding:20px;
+
+    }
+
+    .entry-card{
+
+        padding:22px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .upload-box{
+
+        min-height:220px;
+
+    }
+
+    .preview-image{
+
+        max-width:220px;
+
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .visitor-entry-page{
+
+        padding:16px;
+
+    }
+
+    .page-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+    .entry-card{
+
+        padding:18px;
+
+        border-radius:16px;
+
+    }
+
+    .form-section{
+
+        padding:18px;
+
+    }
+
+    .status-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+    .otp-card{
+
+        text-align:center;
+
+    }
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+    .visitor-entry-page{
+
+        padding:12px;
+
+    }
+
+    .form-section h2{
+
+        font-size:18px;
+
+    }
+
+    .upload-box{
+
+        padding:20px;
+
+    }
+
+    .preview-image{
+
+        max-width:170px;
+
+    }
+
+}

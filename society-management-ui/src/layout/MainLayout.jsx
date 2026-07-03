@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Sidebar from "../components/Sidebar/Sidebar";
 import Navbar from "../components/Navbar/Navbar";
 import AppRoutes from "../routes/AppRoutes";
@@ -5,25 +7,39 @@ import AppRoutes from "../routes/AppRoutes";
 import "./MainLayout.css";
 
 function MainLayout() {
-  return (
+
+  const [sidebarOpen,setSidebarOpen]=useState(false);
+
+  return(
+
     <div className="layout">
 
-      <Sidebar />
+      <Sidebar
+        sidebarOpen={sidebarOpen}
+        setSidebarOpen={setSidebarOpen}
+      />
 
       <div className="main-content">
 
-        <Navbar />
+        <Navbar
+          setSidebarOpen={setSidebarOpen}
+        />
 
-        <div className="page-content">
+        <div
+          className="page-content"
+          onClick={()=>setSidebarOpen(false)}
+        >
 
-          <AppRoutes />
+          <AppRoutes/>
 
         </div>
 
       </div>
 
     </div>
+
   );
+
 }
 
 export default MainLayout;

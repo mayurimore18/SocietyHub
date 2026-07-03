@@ -207,3 +207,96 @@ box-shadow:0 8px 20px rgba(37,99,235,.35);
     background:#EF4444;
 
 }
+
+/* ===================================================
+   RESPONSIVE SIDEBAR
+=================================================== */
+
+.sidebar-overlay{
+    display:none;
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .sidebar{
+        width:240px;
+        padding:24px 18px;
+    }
+
+    .logo-box h2{
+        font-size:34px;
+    }
+
+}
+
+/* Tablet & Mobile */
+
+@media (max-width:992px){
+
+    .sidebar{
+
+        width:260px;
+
+        position:fixed;
+
+        top:0;
+
+        left:0;
+
+        height:100vh;
+
+        transform:translateX(-100%);
+
+        transition:transform .35s ease;
+
+        z-index:1001;
+
+    }
+
+    .sidebar.active{
+
+        transform:translateX(0);
+
+    }
+
+    .sidebar-overlay{
+
+        display:block;
+
+        position:fixed;
+
+        inset:0;
+
+        background:rgba(15,23,42,.45);
+
+        z-index:1000;
+
+    }
+
+    .menu-item{
+
+        padding:12px;
+
+    }
+
+    .menu-item span{
+
+        font-size:14px;
+
+    }
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+    .sidebar{
+
+        width:240px;
+
+    }
+
+}

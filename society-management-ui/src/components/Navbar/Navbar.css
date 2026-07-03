@@ -6,15 +6,17 @@
 
     height:72px;
 
-    background:#FFFFFF;
-
     display:flex;
 
     justify-content:space-between;
 
     align-items:center;
 
-    padding:0 24px;
+    padding:0 20px;
+
+    gap:18px;
+
+    background:#FFFFFF;
 
     border-bottom:1px solid #E5E7EB;
 
@@ -34,11 +36,21 @@
 
 .search-box{
 
-    width:420px;
+    flex:1;
+
+    max-width:420px;
+
+    min-width:120px;
+
+    width:100%;
 
     height:48px;
 
     display:flex;
+
+    flex:1;
+
+min-width:0;
 
     align-items:center;
 
@@ -84,7 +96,11 @@
 
     align-items:center;
 
-    gap:22px;
+    gap:18px;
+
+    margin-left:24px;
+
+    flex-shrink:0;
 
 }
 
@@ -94,11 +110,15 @@
 
 .notification{
 
-    position:relative;
+    width:44px;
 
-    width:48px;
+    height:44px;
 
-    height:48px;
+    min-width:44px;
+
+    min-height:44px;
+
+    border-radius:50%;
 
     display:flex;
 
@@ -106,15 +126,9 @@
 
     align-items:center;
 
-    border-radius:50%;
-
     cursor:pointer;
 
-    background:#FFFFFF;
-
-    border:1px solid #E2E8F0;
-
-    transition:.3s;
+    flex-shrink:0;
 
 }
 
@@ -243,5 +257,169 @@
     font-size:12px;
 
     color:#64748B;
+
+}
+
+/* ==========================================
+   Navbar Left
+========================================== */
+
+.navbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+/* ==========================================
+   Hamburger
+========================================== */
+
+.menu-btn{
+
+    display:none;
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s;
+
+}
+
+.menu-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:992px){
+
+    .menu-btn{
+
+        display:flex;
+
+    }
+
+    .search-box{
+
+        width:220px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .navbar{
+
+        padding:0 12px;
+
+    }
+
+    .navbar-right{
+
+        gap:10px;
+
+    }
+
+    .profile-info{
+
+        display:none;
+
+    }
+
+    .search-box{
+
+        width:150px;
+
+    }
+
+    .notification{
+
+        width:40px;
+
+        height:40px;
+
+        flex-shrink:0;
+
+    }
+
+    .avatar{
+
+        width:38px;
+
+        height:38px;
+
+        font-size:13px;
+
+        flex-shrink:0;
+
+    }
+
+}
+
+@media(max-width:420px){
+
+    .navbar{
+
+        padding:0 10px;
+
+    }
+
+    .search-box{
+
+        width:120px;
+
+    }
+
+    .search-box input{
+
+        font-size:12px;
+
+    }
+
+    .notification{
+
+        width:38px;
+
+        height:38px;
+
+    }
+
+    .avatar{
+
+        width:36px;
+
+        height:36px;
+
+        font-size:12px;
+
+    }
 
 }

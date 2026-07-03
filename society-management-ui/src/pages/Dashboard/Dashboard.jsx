@@ -1,4 +1,5 @@
 import "./Dashboard.css";
+import { useState, useEffect } from "react";
 
 import WelcomeBanner from "../../components/WelcomeBanner/WelcomeBanner";
 import StatCard from "../../components/Stats/StatCard";
@@ -15,6 +16,49 @@ import {
 } from "lucide-react";
 
 function Dashboard() {
+
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+
+    const timer = setInterval(() => {
+
+      setCurrentTime(new Date());
+
+    }, 1000);
+
+    return () => clearInterval(timer);
+
+  }, []);
+
+  const greeting = () => {
+
+    const hour = currentTime.getHours();
+
+    if (hour < 12) return "🌅 Good Morning";
+
+    if (hour < 17) return "☀️ Good Afternoon";
+
+    if (hour < 20) return "🌇 Good Evening";
+
+    return "🌙 Good Night";
+
+  };
+
+  const date = currentTime.toLocaleDateString("en-IN", {
+
+    weekday: "long",
+
+    day: "numeric",
+
+    month: "long",
+
+    year: "numeric",
+
+  });
+
+  const time = currentTime.toLocaleTimeString("en-IN");
+
   return (
     <div className="dashboard">
 
